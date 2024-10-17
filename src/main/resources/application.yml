@@ -1,0 +1,17 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+        password: root
+    application:
+        name: rabbitmq-reciever
+    rabbitmq:
+        host: localhost
+        port: 5672
+        username: guest
+        password: guest
+        virtual-host: /
+server:
+    port: 8000
+queue:
+    name: "queue"
